@@ -1,0 +1,48 @@
+.timer {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-between;
+	padding: 40px;
+	width: 600px;
+	height: 300px;
+	box-sizing: border-box;
+	font-family: Georgia, 'Times New Roman', Times, serif;
+	border-radius: 5px;
+	background: -webkit-linear-gradient(180deg, rgb(34, 87, 122), rgb(56, 163, 165), rgb(128, 237, 153));
+	background: -moz-linear-gradient(180deg, rgb(34, 87, 122), rgb(56, 163, 165), rgb(128, 237, 153));
+	background: linear-gradient(180deg, rgb(34, 87, 122), rgb(56, 163, 165), rgb(128, 237, 153));
+	box-shadow: 0px 5px 10px 2px rgba(34, 60, 80, 0.2);
+	-webkit-box-shadow: 0px 5px 10px 2px rgba(34, 60, 80, 0.2);
+	-moz-box-shadow: 0px 5px 10px 2px rgba(34, 60, 80, 0.2);
+
+	&-title {
+		color: #eeeeee;
+		border-bottom: 1px solid #eeeeee;
+	}
+	&-time-label {
+		font-size: 60px;
+		color: #eeeeee;
+	}
+
+	&-actions {
+		width: 100%;
+		display: flex;
+		justify-content: space-between;
+
+		button {
+			width: 200px;
+			height: 40px;
+			cursor: pointer;
+			border: none;
+			font-size: 18px;
+			margin: 2px;
+			transition: 0.3s;
+		}
+
+		button:hover {
+			background-color: #22577a;
+			color: #eeeeee;
+		}
+	}
+}
